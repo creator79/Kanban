@@ -1,0 +1,46 @@
+
+.board-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    height: calc(100vh - 68px);
+    /* background-color: var(--white1); */
+    height: 100vh;
+  }
+  
+  .board-details-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards to the next line */
+  }
+  
+  .board-card {
+    min-width: 200px; /* Adjust the minimum width of your cards */
+    padding: 16px;
+    margin: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .board-details{
+    background-color: var(--white1);
+    height: 100vh;
+
+ 
+
+  
+  }
+  
+
+  
+  /* src/App.css */
+.dark-theme {
+    /* Dark theme styles */
+    background-color: #010409;
+    color: #fff;
+  }
+  
+  .light-theme {
+    /* Light theme styles */
+    background-color: #fff;
+    color: #333;
+  }
+  
