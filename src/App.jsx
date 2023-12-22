@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { statusList } from "./utils/constants";
 import { userList } from "./utils/constants";
 import priorityList from "./utils/constants";

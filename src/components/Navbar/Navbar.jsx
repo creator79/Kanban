@@ -1,12 +1,12 @@
 // Navbar.jsx
 
 import React, { useState } from 'react';
-import filterIcon from '../../Assets/Images/Tuning.svg';
-import downIcon from '../../Assets/Images/Down.svg';
+import filterIcon from '../../assets/Images/Tuning.svg';
+import downIcon from '../../assets/Images/Down.svg';
 import { useTheme } from '../../utils/ThemeContext';
 
-import LightIcon from '../../Assets/Images/Light.png';
-import DarkIcon from '../../Assets/Images/Dark.png';
+import LightIcon from '../../assets/Images/Light.png';
+import DarkIcon from '../../assets/Images/Dark.png';
 
 import './Navbar.css';
 
