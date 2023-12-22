@@ -9,7 +9,7 @@ import { useTheme } from '../../utils/ThemeContext'
 const Board = ({ groupValue, orderValue, ticketDetails, statusList, userList, priorityList }) => {
     const { isDarkTheme } = useTheme();
   return (
-    <section className={`board-details ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+    <section className={`board-details ${isDarkTheme ? 'light-theme ' : 'dark-theme'}`}>
       <div className="board-details-list">
         {
           {

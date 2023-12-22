@@ -9,7 +9,7 @@ export default function Card(props) {
     const { isDarkTheme } = useTheme();
   return (
     <>
-      <div className={`card-container ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+      <div className={`card-container ${isDarkTheme ? 'light-theme' : 'dark-theme'}`}>
             <div className="card-id-wrapper">
                 <div className="card-id">{props.cardDetails.id}</div>
                 <div className="card-profile">

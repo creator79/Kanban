@@ -34,7 +34,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <section className={`nav ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+      <section className={`nav ${isDarkTheme ? 'light-theme' : 'dark-theme'}`}>
         <div className="nav-container">
           <div>
             <div className="nav-disp-btn" onClick={handleDisplayToggle}>
@@ -67,10 +67,13 @@ export default function Navbar(props) {
                   </select>
                 </div>
               </div>
-              <div className="nav-disp-filters">
+              <div className={`nav-disp-filters ${isDarkTheme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
                 <div className="nav-dropdown-category">Ordering</div>
                 <div className="nav-dropdown-selector">
-                  <select value={props.orderValue} onChange={handleOrderingValue} className="nav-selector" id="">
+                  <select value={props.orderValue} onChange={handleOrderingValue} 
+                    className={`nav-selector ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}
+                
+                    >
                     <option value="priority">Priority</option>
                     <option value="title">Title</option>
                   </select>
@@ -79,7 +82,7 @@ export default function Navbar(props) {
             </div>
           </div>
           <div className="theme-toggle" onClick={handleThemeToggle}>
-            <img src={isDarkTheme ?LightIcon  : DarkIcon} alt="Toggle Theme" style={{ height: '30px', width: '30px' }} />
+            <img src={isDarkTheme ? DarkIcon :  LightIcon} alt="Toggle Theme" style={{ height: '30px', width: '30px' }} />
           </div>
         </div>
       </section>
