@@ -47,7 +47,7 @@ export default function Navbar(props) {
               </div>
             </div>
             <div
-              className={`nav-disp-dropdown ${isDarkTheme ? 'dark-theme' : 'light-theme'} ${
+              className={`nav-disp-dropdown ${isDarkTheme ? 'light-theme' : 'dark-theme'} ${
                 toggleFilter ? 'nav-disp-dropdown-show' : ''
               }`}
             >
@@ -57,7 +57,7 @@ export default function Navbar(props) {
                   <select
                     value={props.groupValue}
                     onChange={handleDisplayToggle}
-                    className={`nav-selector ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}
+                    className={`nav-selector ${isDarkTheme ? 'light-theme' : 'dark-theme'}`}
                     name="grouping"
                     id=""
                   >
@@ -67,11 +67,11 @@ export default function Navbar(props) {
                   </select>
                 </div>
               </div>
-              <div className={`nav-disp-filters ${isDarkTheme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+              <div className={`nav-disp-filters ${isDarkTheme ? 'light-theme' : 'dark-theme'}`}>
                 <div className="nav-dropdown-category">Ordering</div>
                 <div className="nav-dropdown-selector">
                   <select value={props.orderValue} onChange={handleOrderingValue} 
-                    className={`nav-selector ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}
+                    className={`nav-selector ${isDarkTheme ? 'light-theme' : 'dark-theme'}`}
                 
                     >
                     <option value="priority">Priority</option>
